@@ -2,7 +2,7 @@
   "name": "duplicate-file-timestamp",
   "displayName": "Duplicate File Timestamp",
   "description": "Easy duplicate current file to filename with appended timestamp at the end of filename",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "publisher": "urosevic",
   "pricing": "Free",
   "engines": {
@@ -36,7 +36,7 @@
       "keybindings": [
           {
               "command": "extension.duplicateFileTimestamp",
-              "key": "ctrl+shift+alt+d",
+              "key": "ctrl+alt+shift+d",
               "when": "editorTextFocus"
           }
       ]
