@@ -1,0 +1,57 @@
+{
+  "name": "duplicate-file-timestamp",
+  "displayName": "Duplicate File Timestamp",
+  "description": "Easy duplicate current file to filename with appended timestamp at the end of filename",
+  "version": "1.0.0",
+  "publisher": "urosevic",
+  "pricing": "Free",
+  "engines": {
+    "vscode": "^1.95.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [],
+  "keywords": [
+    "duplicate",
+    "clone",
+    "file",
+    "file name",
+    "timestamp"
+  ],
+  "license": "MIT",
+  "main": "./extension.js",
+  "icon": "icon.png",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/urosevic/vscode-duplicate-file-timestamp.git"
+  },
+  "contributes": {
+      "commands": [
+          {
+              "command": "extension.duplicateFileTimestamp",
+              "title": "Duplicate File Timestamp"
+          }
+      ],
+      "keybindings": [
+          {
+              "command": "extension.duplicateFileTimestamp",
+              "key": "ctrl+shift+alt+d",
+              "when": "editorTextFocus"
+          }
+      ]
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "pretest": "npm run lint",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.95.0",
+    "@types/mocha": "^10.0.9",
+    "@types/node": "20.x",
+    "eslint": "^9.13.0",
+    "@vscode/test-cli": "^0.0.10",
+    "@vscode/test-electron": "^2.4.1"
+  }
+}
